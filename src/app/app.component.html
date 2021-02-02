@@ -1,0 +1,114 @@
+<div class="container-wrapper bg-dark text-white"style="padding-bottom:600px;">
+  <div class="card">
+ <div class="card-body bg-dark text-white">
+     <form #taskForm="ngForm">
+       <div class="row" style="justify-content: center;" >
+         <div class="date" class="col-md-6"style="padding-right:20%" *ngIf="isyeardefault">
+           <label for="master" class="ctrl-label"><b>Year</b></label>
+           <select style="border:1px solid black;" class="form-control" name="Year"  mandatorysel (change)="onYearChange(task.yearId)" [(ngModel)]="task.yearId">
+             <option [ngValue]=null>Select</option>
+             <option  *ngFor="let obj of yearDefaultList" [ngValue]=obj.id>{{obj.year}}</option>
+           </select>
+         </div>
+         <div class="col-md-6"style="padding-right:20%" *ngIf="!isyeardefault">
+          <label for="master" class="ctrl-label"><b>Year</b></label>
+          <select style="border:1px solid black;" class="form-control" name="Year"  mandatorysel [(ngModel)]="task.yearId">
+            <option [ngValue]=null>Select</option>
+            <option  *ngFor="let obj of yearList" [ngValue]=obj.id>{{obj.year}}</option>
+          </select>
+        </div>
+         <div class="col-md-6"style="padding-left:20%"  *ngIf="isdefault">
+           <label for="master" class="ctrl-label"><b>Month</b></label>
+           <select style="border:1px solid black;" class="form-control" name="Month"  mandatorysel (change)="onMonthChange(task.monthId)" [(ngModel)]="task.monthId">
+             <option [ngValue]=null >Select</option>
+             <option *ngFor="let obj of monthDefaultList" [ngValue]=obj.id>{{obj.month}}</option>
+           </select>
+         </div>
+        
+         <div class="col-md-6"style="padding-left:20%"*ngIf="!isdefault" >
+          <label for="master" class="ctrl-label"><b>Month</b></label>
+          <select style="border:1px solid black;" class="form-control" name="Month"  mandatorysel [(ngModel)]="task.monthId">
+            <option [ngValue]=null >Select</option>
+            <option *ngFor="let obj of monthList"[ngValue]=obj.id>{{obj.month}}</option>
+          </select>
+        </div> 
+      </div>   
+        <div class="row">
+          <div class="col-md-12" style="padding-left:47%;">
+            <button class="btn btn-primary btn-xs" (click)="OnChangeForChildTable(taskForm)">Show Data</button>
+          </div>
+        </div>                                        
+        
+       
+     </form>
+    </div>
+  </div>
+  
+     <div class="row" >
+        <div>
+              <div class="col-md-3"style="float:left;">
+                <h6 class="text-center">Child1</h6>
+               <table class="table table-striped text-white">
+                 <thead>
+                   <tr>
+                    <th style="text-align: center">SlNo</th>
+                     <th style="text-align: center">Year</th>
+                     <th style="text-align: center">Month</th>
+                     <th style="text-align: center">Price</th>
+                   </tr>
+                 </thead>
+                <tbody>
+                   <tr *ngIf="!child1List1 || child1List1.length <= 0 ">
+                     <td class="text-white text-center" colspan="4">norecords</td>
+                   </tr>
+                   <tr *ngFor="let row of child1List1;let i=index">
+                     <td class="text-white"style="text-align: center">{{i+1}}</td>
+                     <td class="text-white"style="text-align: center">
+                       {{row.year}}
+                     </td>
+                     <td class="text-white"style="text-align: center">
+                       {{row.month}}
+                     </td>
+                     <td class="text-white"style="text-align: center">
+                       {{row.price}}
+                     </td>
+                     
+                   </tr>
+                 </tbody>
+               </table>
+               </div>
+               <div class="col-md-3"style="float:right;">
+                <h6 class="text-center">Child2</h6>
+               <table class="table table-striped text-white">
+                <thead>
+                  <tr>
+                   <th style="text-align: center">SlNo</th>
+                    <th style="text-align: center">Year</th>
+                    <th style="text-align: center">Month</th>
+                    <th style="text-align: center">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngIf="!child1List2 || child1List2.length <= 0 ">
+                    <td class="text-white text-center" colspan="4">norecords</td>
+                  </tr>
+                  <tr *ngFor="let row of child1List2;let i=index">
+                    <td class="text-white"style="text-align: center">{{i+1}}</td>
+                    <td class="text-white"style="text-align: center">
+                      {{row.year}}
+                    </td>
+                    <td class="text-white"style="text-align: center">
+                      {{row.month}}
+                    </td>
+                    <td class="text-white"style="text-align: center">
+                      {{row.price}}
+                    </td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+             </div>
+     </div>
+   </div>
+  </div>
+ 
