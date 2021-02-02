@@ -86,11 +86,11 @@ export class AppComponent {
   ];
 
   tableList2: any[] = [
-    { monthId: 1, month: "Jan", yearId: 3,year:2012,price:"$400" },
+    { monthId: 1, month: "January", yearId: 3,year:2012,price:"$400" },
 
-    { monthId: 2, month: "Feb", yearId: 4 ,year: 2013,price:"$600"},
+    { monthId: 2, month: "Febuary", yearId: 4 ,year: 2013,price:"$600"},
 
-    { monthId: 3, month: "Mar", yearId: null,year: "N/a",price:"N/a"},
+    { monthId: 3, month: "March", yearId: null,year: "N/a",price:"N/a"},
 
     { monthId: 4, month: "April", yearId: 6,year: 2015,price:"$700"},
 
@@ -100,15 +100,15 @@ export class AppComponent {
 
     { monthId: 7, month: "July",  yearId: null ,year: "N/a",price:"N/a"  },
 
-    { monthId: 8, month: "Aug", yearId: null ,year: "N/a",price:"N/a"  },
+    { monthId: 8, month: "August", yearId: null ,year: "N/a",price:"N/a"  },
 
-    { monthId: 9, month: "Sep",  yearId: null ,year: "N/a" ,price:"N/a" },
+    { monthId: 9, month: "September",  yearId: null ,year: "N/a" ,price:"N/a" },
 
-    { monthId: 10, month: "Oct", yearId: null ,year: "N/a" ,price:"N/a" },
+    { monthId: 10, month: "October", yearId: null ,year: "N/a" ,price:"N/a" },
 
-    { monthId: 11, month: "Nov",  yearId: null ,year: "N/a" ,price:"N/a" },
+    { monthId: 11, month: "November",  yearId: null ,year: "N/a" ,price:"N/a" },
 
-    { monthId: 12, month: "Dec", yearId: 3,year:2012 ,price:"$390" }
+    { monthId: 12, month: "December", yearId: 3,year:2012 ,price:"$390" }
   ];
 
 
