@@ -65,23 +65,7 @@ export class AppComponent {
 
     { monthId: 3, month: "March", yearId: 5 ,year: 2014,price:"$800"},
 
-    { monthId: 4, month: "April", yearId: null,year: "N/a" ,price:"N/a"},
-
-    { monthId: 5, month: "May", yearId: 5 ,year: 2014,price:"$920"},
-
-    { monthId: 6, month: "june", yearId: null ,year: "N/a",price:"N/a" },
-
-    { monthId: 7, month: "July",  yearId: null ,year: "N/a" ,price:"N/a" },
-
-    { monthId: 8, month: "August", yearId: null ,year: "N/a" ,price:"N/a" },
-
-    { monthId: 9, month: "September",  yearId: null ,year: "N/a" ,price:"N/a" },
-
-    { monthId: 10, month: "October", yearId: null ,year: "N/a" ,price:"N/a" },
-
-    { monthId: 11, month: "November",  yearId: null ,year: "N/a",price:"N/a"  },
-
-    { monthId: 12, month: "December", yearId: null,year: "N/a" ,price:"N/a" }
+    { monthId: 5, month: "May", yearId: 5 ,year: 2014,price:"$920"}
 
   ];
 
@@ -90,23 +74,7 @@ export class AppComponent {
 
     { monthId: 2, month: "Febuary", yearId: 4 ,year: 2013,price:"$600"},
 
-    { monthId: 3, month: "March", yearId: null,year: "N/a",price:"N/a"},
-
     { monthId: 4, month: "April", yearId: 6,year: 2015,price:"$700"},
-
-    { monthId: 5, month: "May", yearId: null,year: "N/a",price:"N/a"},
-
-    { monthId: 6, month: "june", yearId: null ,year: "N/a",price:"N/a" },
-
-    { monthId: 7, month: "July",  yearId: null ,year: "N/a",price:"N/a"  },
-
-    { monthId: 8, month: "August", yearId: null ,year: "N/a",price:"N/a"  },
-
-    { monthId: 9, month: "September",  yearId: null ,year: "N/a" ,price:"N/a" },
-
-    { monthId: 10, month: "October", yearId: null ,year: "N/a" ,price:"N/a" },
-
-    { monthId: 11, month: "November",  yearId: null ,year: "N/a" ,price:"N/a" },
 
     { monthId: 12, month: "December", yearId: 3,year:2012 ,price:"$390" }
   ];
