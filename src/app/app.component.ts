@@ -8,7 +8,6 @@ import { TaskModel } from './task-model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'evenionassignment';
   isdefault: Boolean = true;
   isyeardefault:Boolean=true;
   task = new TaskModel();
@@ -117,7 +116,7 @@ export class AppComponent {
       return;
     }
     
-// debugger
+
 //     this.yearDefaultList.forEach(y => {
 //       for(var i=0;i<=this.yearDefaultList.length;i++)
 //       {
